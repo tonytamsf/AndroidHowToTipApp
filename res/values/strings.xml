@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">How To Tip?</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="your_bill">Your Bill?</string>
+    <string name="total_amount">Total:</string>
+    <string name="tip_rate_generous">20%</string>
+    <string name="tip_rate_normal">15%</string>
+    <string name="tip_rate_cheap">10%</string>
+    <string name="tip_is">Tip Is:</string>
+    <string name="blank" />
+
+    <item name="tip_rate_cheap_value" type="fraction">.10</item>
+    <item name="tip_rate_normal_value" type="fraction">.15</item>
+    <item name="tip_rate_generous_value" type="fraction">.20</item>
+
+</resources>
