@@ -3,10 +3,12 @@ package com.example.howtotip;
 import java.text.DecimalFormat;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -16,7 +18,14 @@ public class TipMainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.tip_main);
-		
+		// Request focus and show soft keyboard automatically
+		EditText etBill = (EditText) findViewById(R.id.editTextYourBill);
+
+		etBill.requestFocus();
+
+		InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+		// only will trigger it if no physical keyboard is open
+		mgr.showSoftInput(etBill, InputMethodManager.SHOW_IMPLICIT);
 		
 	}
 
