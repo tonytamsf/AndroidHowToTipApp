@@ -21,61 +21,6 @@
         <requestFocus />
     </EditText>
 
-    <LinearLayout
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/editTextYourBill"
-        android:layout_marginTop="70dp"
-        android:gravity="center_horizontal" >
-
-        <Button
-            android:id="@+id/buttonTipRateCheap"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="calcTips"
-            android:text="@string/tip_rate_cheap" />
-
-        <Button
-            android:id="@+id/buttonTipRateNormal"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="calcTips"
-            android:text="@string/tip_rate_normal" />
-
-        <Button
-            android:id="@+id/buttonTipRateGenerous"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="calcTips"
-            android:text="@string/tip_rate_generous" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textViewTipIs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextYourBill"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="125dp"
-        android:text="@string/tip_is"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textViewTotalAmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textViewTipIs"
-        android:layout_alignTop="@+id/textViewTipIs"
-        android:layout_marginTop="46dp"
-        android:text="@string/total_amount"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
     <TextView
         android:id="@+id/textViewCalcTips"
         android:layout_width="wrap_content"
@@ -93,5 +38,65 @@
         android:layout_alignBottom="@+id/textViewTotalAmount"
         android:layout_alignLeft="@+id/textViewCalcTips"
         android:text="@string/blank" />
+
+    <TextView
+        android:id="@+id/textViewTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextYourBill"
+        android:layout_below="@+id/textViewTipIs"
+        android:text="@string/total_amount"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextYourBill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/buttonTipRateCheap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calcTips"
+            android:text="@string/tip_rate_cheap" />
+
+        <Button
+            android:id="@+id/buttonTipRateNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calcTips"
+            android:text="@string/tip_rate_normal" />
+
+        <Button
+            android:id="@+id/buttonTipRateGenerous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calcTips"
+            android:text="@string/tip_rate_generous" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewCalcTotal"
+        android:src="@drawable/tipping_hints" />
+
+    <TextView
+        android:id="@+id/textViewTipIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewTotalAmount"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="14dp"
+        android:text="@string/tip_is"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
