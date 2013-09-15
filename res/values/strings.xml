@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">How To Tip Calculator</string>
-    <string name="your_bill">Your Bill?</string>
-    <string name="total_amount">Total:</string>
-    <string name="tip_rate_generous">20%</string>
-    <string name="tip_rate_normal">15%</string>
-    <string name="tip_rate_cheap">10%</string>
-    <string name="tip_is">Tip Is:</string>
-    <string name="blank" />
-    <string name="action_feedback">How To Tip Calculator</string>
-
-    <item name="tip_rate_cheap_value" type="fraction">.10</item>
-    <item name="tip_rate_normal_value" type="fraction">.15</item>
-    <item name="tip_rate_generous_value" type="fraction">.20</item>
-
-    <string name="dialog_alert_title">Feedback to tonytam@yahoo.com</string>
-    <string name="app_title">How To Tip?</string>
-    <string name="how_much_to_tip">How Much To Tips?</string>
-    <string name="about">About...</string>
-    <string name="ok">OK</string>
-    <string name="author">Author: http://tonytam.wordpress.com/howtotip</string>
-
+	<string name="app_name">Tipping Calculator</string>
+	<string name="your_bill">Bill without taxes?</string>
+	<string name="total_amount">Total:</string>
+	<string name="tip_rate_generous">20%</string>
+	<string name="tip_rate_normal">15%</string>
+	<string name="tip_rate_cheap">10%</string>
+	<string name="tip_is">Tip Is:</string>
+	<string name="blank" />
+	<string name="action_feedback">Tipping Calculator</string>
+	<item name="tip_rate_cheap_value" type="fraction">.10</item>
+	<item name="tip_rate_normal_value" type="fraction">.15</item>
+	<item name="tip_rate_generous_value" type="fraction">.20</item>
+	<string name="dialog_alert_title">Feedback to tonytam@yahoo.com</string>
+	<string name="app_title">How To Tip?</string>
+	<string name="how_much_to_tip">How Much To Tips?</string>
+	<string name="about">About</string>
+	<string name="ok">OK</string>
+	<string name="author">Author: Tony Tam http://tonytam.wordpress.com/howtotip</string>
 </resources>
