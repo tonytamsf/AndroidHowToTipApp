@@ -6,4 +6,4 @@ env:
 
 android:
   components:
-    - build-tools-19.1
+    - build-tools-19.1.0
