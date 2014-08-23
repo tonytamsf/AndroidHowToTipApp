@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tonytamsf/android-HowToTip.svg?branch=master)](https://travis-ci.org/tonytamsf/android-HowToTip)
+
 Android How To Tip App
 ==================
 
